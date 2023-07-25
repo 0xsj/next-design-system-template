@@ -1,12 +1,9 @@
 {
   "extends": "../../tsconfig.base",
-  "include": [
-    "src"
-  ],
+  "include": ["src"],
   "compilerOptions": {
     "composite": true,
-    "esModuleInterop": true,
-    "jsx": "preserve"
+    "jsx": "react-jsx"
   },
   "references": []
 }

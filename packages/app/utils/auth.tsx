@@ -1,10 +1,5 @@
 import * as AuthSession from "expo-auth-session";
-import {
-  OAuthStrategy,
-  SetSession,
-  SignUpResource,
-  SignInResource,
-} from "@clerk/types";
+import { OAuthStrategy, SetSession, SignUpResource, SignInResource } from "@clerk/types";
 
 export const handleOAuthSignUp = async (
   strategy: OAuthStrategy,
