@@ -1,4 +1,3 @@
-// state/theme.ts
 import { atom, useAtom } from "jotai";
 
 export const themeAtom = atom<"light" | "dark">("light");

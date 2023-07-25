@@ -13,6 +13,7 @@ import React, { useMemo } from "react";
 import type { SolitoAppProps } from "solito";
 import "raf/polyfill";
 import { trpc } from "app/utils/trpc.web";
+import { useThemeToggle } from "app/state";
 
 function MyApp({ Component, pageProps }: SolitoAppProps) {
   return (
@@ -30,10 +31,9 @@ function MyApp({ Component, pageProps }: SolitoAppProps) {
 }
 
 function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [theme, setTheme] = useRootTheme();
-
+  const { theme, toggleTheme } = useThemeToggle();
   return (
-    <NextThemeProvider onChangeTheme={setTheme}>
+    <NextThemeProvider onChangeTheme={toggleTheme}>
       <Provider disableRootThemeClass defaultTheme={theme}>
         {children}
       </Provider>
