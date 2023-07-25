@@ -3523,9 +3523,10 @@ __metadata:
   resolution: "@my/ui@workspace:packages/ui"
   dependencies:
     "@tamagui/animations-react-native": latest
+    "@tamagui/animations-reanimated": ^1.45.8
     "@tamagui/build": latest
     "@tamagui/font-inter": latest
-    "@tamagui/font-silkscreen": latest
+    "@tamagui/font-silkscreen": ^1.45.8
     "@tamagui/react-native-media-driver": latest
     "@tamagui/shorthands": latest
     "@tamagui/themes": latest
@@ -4545,6 +4546,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tamagui/animations-reanimated@npm:^1.45.8":
+  version: 1.45.8
+  resolution: "@tamagui/animations-reanimated@npm:1.45.8"
+  dependencies:
+    "@tamagui/animations-react-native": 1.45.8
+    "@tamagui/use-presence": 1.45.8
+    "@tamagui/web": 1.45.8
+  checksum: 0013c3e88acfcb37f8070aa6d0b95249d124e682494476addec4340689e9d5983525fef2e2f57020ce95b0a3f1584c269fbd467efbc5a07e6e7dcd838de1456f
+  languageName: node
+  linkType: hard
+
 "@tamagui/aria-hidden@npm:1.45.8":
   version: 1.45.8
   resolution: "@tamagui/aria-hidden@npm:1.45.8"
@@ -4864,7 +4876,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tamagui/font-silkscreen@npm:latest":
+"@tamagui/font-silkscreen@npm:^1.45.8, @tamagui/font-silkscreen@npm:latest":
   version: 1.45.8
   resolution: "@tamagui/font-silkscreen@npm:1.45.8"
   dependencies:

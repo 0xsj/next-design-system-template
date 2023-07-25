@@ -7,7 +7,7 @@ import { SignedIn, SignedOut, useAuth } from "../../utils/clerk";
 export function HomeScreen() {
   const { signOut, userId } = useAuth();
   const userLinkProps = useLink({
-    href: "/user/nate",
+    href: "/user/0xsj",
   });
   const signInLinkProps = useLink({
     href: "/signin",
@@ -34,13 +34,11 @@ export function HomeScreen() {
     <YStack f={1} jc="center" ai="center" p="$4" space>
       <YStack space="$4" maw={600} px="$3">
         <XStack jc="center" ai="flex-end" fw="wrap" space="$2" mt="$-2">
-          <H1 ta="center" mt="$2">
+          <H1 fontFamily={"$silkscreen"} ta="center" mt="$2">
             Hello World.
           </H1>
         </XStack>
       </YStack>
-
-      <H3 ta="center">Some Demos</H3>
 
       <XStack space>
         <Button {...userLinkProps}>User Page (Routing)</Button>
