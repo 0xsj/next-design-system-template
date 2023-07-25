@@ -43,19 +43,13 @@ export function HomeScreen() {
       <H3 ta="center">Some Demos</H3>
 
       <XStack space>
-        <Button {...userLinkProps} theme={"gray"}>
-          User Page (Routing)
-        </Button>
+        <Button {...userLinkProps}>User Page (Routing)</Button>
       </XStack>
 
       <SignedOut>
         <XStack space ai="center">
-          <Button {...signInLinkProps} theme={"gray"}>
-            Sign In
-          </Button>
-          <Button {...signUpLinkProps} theme={"gray"}>
-            Sign Up
-          </Button>
+          <Button {...signInLinkProps}>Sign In</Button>
+          <Button {...signUpLinkProps}>Sign Up</Button>
         </XStack>
       </SignedOut>
 
