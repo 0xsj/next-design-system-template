@@ -1,5 +1,5 @@
 {
-  "name": "myapp-monorepo",
+  "name": "conduit",
   "private": true,
   "workspaces": [
     "apps/*",
