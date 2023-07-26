@@ -1,5 +1,13 @@
 import { useState } from "react";
-import { YStack, Paragraph, XStack, Button, Input, Image, Stack } from "tamagui";
+import {
+  YStack,
+  Paragraph,
+  XStack,
+  Button,
+  Input,
+  Image,
+  Stack,
+} from "tamagui";
 import { Link } from "solito/link";
 import { OAuthStrategy } from "@clerk/types";
 
@@ -42,7 +50,11 @@ export const SignUpSignInComponent: React.FC<Props> = ({
           focusStyle={{ scale: 0.95 }}
           borderColor="$gray8Light"
         >
-          test
+          <Image
+            src="https://qwvsfvhphdefqfyuuhlb.supabase.co/storage/v1/object/public/logos/Google%20logo.png"
+            width={20}
+            height={20}
+          />
         </Button>
         <Button
           size="$5"
@@ -51,7 +63,12 @@ export const SignUpSignInComponent: React.FC<Props> = ({
           focusStyle={{ scale: 0.95 }}
           borderColor="$gray8Light"
         >
-          hi
+          <Image
+            src="https://qwvsfvhphdefqfyuuhlb.supabase.co/storage/v1/object/public/logos/Apple%20logo.png"
+            width={22}
+            height={22}
+            resizeMode="contain"
+          />
         </Button>
         <Button
           size="$5"
@@ -60,7 +77,12 @@ export const SignUpSignInComponent: React.FC<Props> = ({
           focusStyle={{ scale: 0.95 }}
           borderColor="$gray8Light"
         >
-          test hi2
+          <Image
+            src="https://qwvsfvhphdefqfyuuhlb.supabase.co/storage/v1/object/public/logos/Discord%20logo.png"
+            width={25}
+            height={22}
+            resizeMode="contain"
+          />
         </Button>
       </XStack>
       <XStack ai="center" width="100%" jc="space-between">
@@ -104,7 +126,9 @@ export const SignUpSignInComponent: React.FC<Props> = ({
       {/* or sign in, in small and less opaque font */}
       <XStack>
         <Paragraph size="$2" mr="$2" opacity={0.4}>
-          {type === "sign-up" ? "Already have an account?" : "Don’t have an account?"}
+          {type === "sign-up"
+            ? "Already have an account?"
+            : "Don’t have an account?"}
         </Paragraph>
         <Link href={type === "sign-up" ? "/signin" : "/signup"}>
           <Paragraph

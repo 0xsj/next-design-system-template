@@ -82,7 +82,6 @@ module.exports = function () {
     ],
     experimental: {
       // optimizeCss: true,
-      appDir: false,
       scrollRestoration: true,
       legacyBrowsers: false,
     },

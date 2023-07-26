@@ -14,20 +14,18 @@
   ],
   "scripts": {
     "build": "tamagui-build",
-    "watch": "tamagui-build --watch"
+    "watch": "tamagui-build --watch",
+    "clean": "rm -rf dist types"
   },
   "dependencies": {
-    "@tamagui/animations-react-native": "latest",
-    "@tamagui/animations-reanimated": "latest",
-    "@tamagui/font-inter": "latest",
-    "@tamagui/font-silkscreen": "latest",
-    "@tamagui/react-native-media-driver": "latest",
-    "@tamagui/shorthands": "latest",
-    "@tamagui/themes": "latest",
-    "@tamagui/toast": "latest",
-    "tamagui": "latest"
+    "@tamagui/animations-react-native": "^1.39.8",
+    "@tamagui/font-inter": "^1.39.8",
+    "@tamagui/react-native-media-driver": "^1.39.8",
+    "@tamagui/shorthands": "^1.39.8",
+    "@tamagui/themes": "^1.39.8",
+    "tamagui": "^1.39.8"
   },
   "devDependencies": {
-    "@tamagui/build": "latest"
+    "@tamagui/build": "^1.39.8"
   }
 }
