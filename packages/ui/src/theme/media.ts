@@ -1,4 +1,4 @@
-import { createMedia } from "@tamagui/react-native-media-driver";
+import { createMedia } from '@tamagui/react-native-media-driver';
 
 export const media = createMedia({
   // for site
@@ -13,8 +13,8 @@ export const media = createMedia({
   gtMd: { minWidth: 1020 + 1 },
   gtLg: { minWidth: 1280 + 1 },
   gtXl: { minWidth: 1650 + 1 },
-  hoverNone: { hover: "none" },
-  pointerCoarse: { pointer: "coarse" },
+  hoverNone: { hover: 'none' },
+  pointerCoarse: { pointer: 'coarse' }
 });
 
 // note all the non "gt" ones should be true to start to match mobile-first
@@ -26,5 +26,5 @@ export const mediaQueryDefaultActive = {
   sm: true,
   xs: true,
   // false
-  xxs: false,
+  xxs: false
 };

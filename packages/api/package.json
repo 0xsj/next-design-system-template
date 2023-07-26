@@ -5,7 +5,7 @@
   "types": "./index.ts",
   "license": "MIT",
   "dependencies": {
-    "@clerk/nextjs": "^4.6.15",
+    "@clerk/nextjs": "^4.23.1",
     "@my/db": "*",
     "@supabase/supabase-js": "^2.29.0",
     "@trpc/client": "10.9.0",

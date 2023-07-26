@@ -1,3 +1,12 @@
-import { HomeScreen } from 'app/features/home/screen'
+import { HomeScreen } from 'app/features/home/screen';
+import { Layout } from './Layout';
 
-export default HomeScreen
+export const Home = () => {
+  return (
+    <Layout>
+      <HomeScreen />
+    </Layout>
+  );
+};
+
+export default Home;
