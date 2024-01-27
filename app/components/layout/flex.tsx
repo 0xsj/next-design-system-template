@@ -1,16 +1,14 @@
-import { ReactNode } from "react";
+import { ComponentProps, ReactNode } from "react";
 import * as stylex from "@stylexjs/stylex";
 
 type Direction = "row" | "column";
 
 export type FlexProps = {
   direction?: Direction;
-  justifyContent?: string;
-  alignItems?: string;
   children?: ReactNode;
   style?: any;
   p?: number;
-};
+} & ComponentProps<"div">;
 
 const styles = stylex.create({
   row: {
@@ -25,14 +23,7 @@ const styles = stylex.create({
   },
 });
 
-export const Flex: React.FC<FlexProps> = ({
-  direction = "row",
-  justifyContent = "flex-start",
-  alignItems = "stretch",
-  children,
-  style,
-  p = 0,
-}) => {
+export const Flex: React.FC<FlexProps> = ({ direction = "row", children, style, p = 0 }) => {
   return (
     <div {...stylex.props(styles[direction], style)} style={{ padding: p }}>
       {children}
