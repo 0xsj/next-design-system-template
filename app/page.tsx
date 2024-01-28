@@ -1,18 +1,14 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import { Flex } from "./components";
-import { Box } from "./components/layout/box";
+
 export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
-        <Flex direction="column" p={30}>
-          hi
-        </Flex>
-        <Box p={30}>
-          <h1>hi</h1>
-        </Box>
-
+        <p>
+          Get started by editing&nbsp;
+          <code className={styles.code}>app/page.tsx</code>
+        </p>
         <div>
           <a
             href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
@@ -89,7 +85,9 @@ export default function Home() {
           <h2>
             Deploy <span>-&gt;</span>
           </h2>
-          <p>Instantly deploy your Next.js site to a shareable URL with Vercel.</p>
+          <p>
+            Instantly deploy your Next.js site to a shareable URL with Vercel.
+          </p>
         </a>
       </div>
     </main>
