@@ -2,17 +2,33 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import { tursoClient } from "../lib/turso";
 
+export interface Framework {
+  name: string;
+  language: string;
+  url: string;
+  stars: number;
+  id: number;
+}
+
+
 async function getData() {
   try {
-    const res = await tursoClient().execute("");
+    const res = await tursoClient().execute("select * from frameworks;");
+    return {
+      frameworks: res.rows as unknown as Framework[]
+    }
   } catch (error) {
     console.error(error);
-    return {};
+    return {
+      frameworks: []
+    };
   }
 }
 
 export default async function Home() {
-  const { data } = await getData();
+  const {frameworks} = await getData();
+ console.log(frameworks) 
+
   return (
     <main className={styles.main}>
       <div className={styles.description}>
