@@ -1,7 +1,18 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import { tursoClient } from "../lib/turso";
 
-export default function Home() {
+async function getData() {
+  try {
+    const res = await tursoClient().execute("");
+  } catch (error) {
+    console.error(error);
+    return {};
+  }
+}
+
+export default async function Home() {
+  const { data } = await getData();
   return (
     <main className={styles.main}>
       <div className={styles.description}>
